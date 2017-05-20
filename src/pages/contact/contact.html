@@ -1,0 +1,56 @@
+
+<ion-header>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=mobile-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+
+ <ion-toolbar>
+
+   <ion-title>
+         Contact
+    </ion-title><br><br>
+
+    
+   
+ <div class="w3-bar-item w3-white w3-text-black">
+   <button [navPush]="homePage" class="w3-bar-item w3-button w3-center w3-teal w3-text-white" ><ion-icon name="home"></ion-icon></button>
+  <button [navPush]="infoPage" class="w3-bar-item w3-button  w3-center w3-green w3-text-white" ><ion-icon name="list-box"></ion-icon></button>
+  <button [navPush]="commentPage" class="w3-bar-item w3-button w3-center w3-light-green w3-text-white" ><ion-icon name="chatbubbles"></ion-icon></button>
+  <button [navPush]="contactPage" class="w3-bar-item w3-button  w3-center w3-lime w3-text-white"><ion-icon name="contact"></ion-icon></button>
+  <button [navPush]="infoPage" class="w3-bar-item w3-button  w3-center w3-green w3-text-white"><ion-icon name="more"></ion-icon></button>
+
+</div>
+
+  <script>
+function openMenu(Menu) {
+    var i;
+    var x = document.getElementsByClassName("menu");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    document.getElementById(cityName).style.display = "block"; 
+}
+   </script>
+</ion-toolbar>
+
+</ion-header>
+  <ion-content>
+  <br><br><br><br>
+  <ion-card>
+  <img src="imgg/whatthefood-map.png">
+  <ion-fab right top>
+    <button ion-fab>
+      <ion-icon name="pin"></ion-icon>
+    </button>
+  </ion-fab>
+<br><br>
+  <ion-list>
+      <ion-icon name="logo-facebook" item-left></ion-icon>&nbsp; www.facebook.com/whatthefood <br><br>
+      <ion-icon name="md-globe" item-left></ion-icon>&nbsp; www.whatthefood.com <br><br>
+      <ion-icon name="logo-instagram" item-left></ion-icon>&nbsp; @whatthefood <br><br>
+      <ion-icon name="ios-phone-portrait" item-left></ion-icon>&nbsp; +66 81 234 5678 <br><br>
+      <ion-icon name="ios-mail-outline" item-left></ion-icon>&nbsp; contact@whatthefood.com
+ </ion-list>
+ </ion-card>
+</ion-content>

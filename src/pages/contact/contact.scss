@@ -1,0 +1,69 @@
+page-contact{
+
+
+   
+.card-background-page {
+
+  ion-card {
+    position: relative;
+    text-align: center;
+    
+  }
+
+  .card-title {
+    position: absolute;
+    top: 36%;
+    font-size: 2.0em;
+    width: 100%;
+    font-weight: bold;
+    color: white;
+  }
+
+  .card-subtitle {
+    font-size: 1.0em;
+    position: absolute;
+    top: 52%;
+    width: 100%;
+    color: #fff;
+  }
+
+
+}
+
+body, html {height:70%}
+
+body,h1,h2,h3,h4,h5,h6 {
+font-family: "Amatic SC", sans-serif;
+font-size:10px;
+}
+
+//.menu {display: none}
+.bgimg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/burger.jpg");
+    min-height: 100%;
+    //font-family: "Amatic SC", sans-serif
+    
+
+    
+
+}
+ion-toolbar{
+   font-family: "Amatic SC", sans-serif;
+   font-size:26px;
+}
+
+ion-title{
+    font-family: "Amatic SC", sans-serif;
+    font-size:26px;
+
+}
+
+ ion-content{
+     font-family: "Amatic SC", sans-serif;
+     font-size:10px;
+
+
+ }
+}

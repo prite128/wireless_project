@@ -1,0 +1,76 @@
+<ion-header>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=mobile-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+
+ <ion-toolbar>
+
+   <ion-title>
+      Spaghetti
+    </ion-title><br><br>
+
+    
+   
+ <div class="w3-bar-item w3-white w3-text-black">
+   <button [navPush]="homePage" class="w3-bar-item w3-button w3-center w3-teal w3-text-white" ><ion-icon name="home"></ion-icon></button>
+  <button [navPush]="infoPage" class="w3-bar-item w3-button  w3-center w3-green w3-text-white" ><ion-icon name="list-box"></ion-icon></button>
+  <button [navPush]="commentPage" class="w3-bar-item w3-button w3-center w3-light-green w3-text-white" ><ion-icon name="chatbubbles"></ion-icon></button>
+  <button [navPush]="contactPage" class="w3-bar-item w3-button  w3-center w3-lime w3-text-white"><ion-icon name="contact"></ion-icon></button>
+  <button [navPush]="infoPage" class="w3-bar-item w3-button  w3-center w3-green w3-text-white"><ion-icon name="more"></ion-icon></button>
+
+</div>
+
+  <script>
+function openMenu(Menu) {
+    var i;
+    var x = document.getElementsByClassName("menu");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    document.getElementById(cityName).style.display = "block"; 
+}
+   </script>
+</ion-toolbar>
+
+</ion-header>
+
+<ion-content><br>
+  <ion-card>
+        <img src="assets/imagesspaghetti/Spaghetti.jpg">
+          <ion-card-content>
+            <p><b>Spaghetti (Italian pronunciation: [spaˈɡetti]) is a long, thin, cylindrical, solid pasta. It is a staple food of traditional Italian cuisine. Like other pasta, spaghetti is made of milled wheat and water.</b>
+             <div class="container">
+
+  <div class="progress">
+    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="3.4" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+      <b style="color:black;">4 g : Proteins</b>
+    </div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width:35%">
+      <b style="color:black;">0.5 g : Fats</b>
+    </div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="41" aria-valuemin="0" aria-valuemax="100" style="width:35%">
+      <b style="color:black;">22 g : Carbohydrates</b>
+    </div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:35%">
+      <b style="color:black;">110 Kcal : Calories</b>
+    </div>
+  </div>
+</div>
+          </ion-card-content>
+  </ion-card>
+
+
+  <button [navPush]="infoPage" color="black" style="font-size:26px">Back <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon></button>
+
+
+
+</ion-content>
+
+
